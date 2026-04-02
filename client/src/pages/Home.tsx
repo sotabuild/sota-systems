@@ -59,7 +59,7 @@ export default function Home() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-black/20 backdrop-blur-lg border-b border-white/10">
         <div className="container mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src="/assets/logo.png" alt="SOTA Logo" className="h-8 w-auto object-contain" />
+            <img src="./assets/logo.png" alt="SOTA Logo" className="h-8 w-auto object-contain" />
             <span className="font-bold text-xl tracking-tight hidden sm:inline-block">SOTA</span>
           </div>
           <div className="flex items-center gap-6">
@@ -95,7 +95,7 @@ export default function Home() {
             transition={{ duration: 1, ease: "easeOut" }}
           >
             <img 
-              src="/assets/logo.png" 
+              src="./assets/logo.png" 
               alt="SOTA Logo" 
               className="h-32 md:h-48 mx-auto mb-12 drop-shadow-[0_0_30px_rgba(255,255,255,0.2)]" 
             />
@@ -113,7 +113,7 @@ export default function Home() {
                 </a>
               </Button>
               <Button size="lg" variant="outline" className="h-14 px-8 border-white/20 hover:bg-white/10 text-lg font-semibold rounded-full" asChild>
-                <a href="/guest-journey">
+                <a href="./guest-journey">
                   Explorar Jornada
                 </a>
               </Button>
@@ -180,7 +180,7 @@ export default function Home() {
                   <CardContent className="px-8 pb-8">
                     <p className="text-white/60 mb-8 leading-relaxed">{module.description}</p>
                     <Button variant="link" className="p-0 h-auto text-white group-hover:gap-4 transition-all" asChild>
-                      <a href={`/${module.slug}`}>
+                      <a href={`./${module.slug}`}>
                         Saber mais <ArrowRight className="ml-2 w-4 h-4" />
                       </a>
                     </Button>
@@ -270,7 +270,7 @@ export default function Home() {
       <footer className="py-20 border-t border-white/5 bg-black">
         <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-12">
           <div className="flex items-center gap-3">
-            <img src="/assets/logo.png" alt="SOTA Logo" className="h-6 w-auto opacity-50" />
+            <img src="./assets/logo.png" alt="SOTA Logo" className="h-6 w-auto opacity-50" />
             <span className="text-white/20 font-bold tracking-widest text-sm">SOTA SYSTEMS</span>
           </div>
           <p className="text-white/20 text-sm">
